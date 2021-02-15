@@ -13,6 +13,15 @@ function range(start, end, step = 1) {
   return result;
 }
 
-console.log(range(1, 26));
-console.log(range(1, 100, 2));
-console.log(range(10, 2, -3));
+function sum(values) {
+  total = 0;
+  for (value of values) {
+    total += value;
+  }
+
+  return total;
+}
+
+console.log(sum(range(1, 26)));
+console.log(sum(range(1, 100, 2)));
+console.log(sum(range(10, 2, -3)));
